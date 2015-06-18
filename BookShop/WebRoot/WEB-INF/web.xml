@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SysLogin</servlet-name>
+    <servlet-class>com.scnu.servlet.SysLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginOut</servlet-name>
+    <servlet-class>com.scnu.servlet.LoginOut</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.scnu.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>com.scnu.servlet.BookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CustomerLoginOut</servlet-name>
+    <servlet-class>com.scnu.servlet.CustomerLoginOut</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.scnu.servlet.Index</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookDetail</servlet-name>
+    <servlet-class>com.scnu.servlet.BookDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShoppingCart</servlet-name>
+    <servlet-class>com.scnu.servlet.ShoppingCart</servlet-class>
+  </servlet>
+
+
+
+
+
+<filter>  
+    <filter-name>SysLoginFilter</filter-name>  
+    <filter-class>com.scnu.filter.SysLoginFilter</filter-class>  
+</filter>  
+
+<filter-mapping>  
+    <filter-name>SysLoginFilter</filter-name>  
+    <url-pattern>/admin/*</url-pattern>  
+</filter-mapping>  
+<filter-mapping>  
+    <filter-name>SysLoginFilter</filter-name>  
+    <url-pattern>/adminIndex.jsp</url-pattern>  
+</filter-mapping> 
+
+<filter>  
+    <filter-name>CustomerLoginFilter</filter-name>  
+    <filter-class>com.scnu.filter.CustomerLoginFilter</filter-class>  
+</filter>  
+
+<filter-mapping>  
+    <filter-name>CustomerLoginFilter</filter-name>  
+    <url-pattern>/customer/*</url-pattern>  
+</filter-mapping>  
+
+  <servlet-mapping>
+    <servlet-name>SysLogin</servlet-name>
+    <url-pattern>/servlet/SysLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOut</servlet-name>
+    <url-pattern>/servlet/LoginOut</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/servlet/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerLoginOut</servlet-name>
+    <url-pattern>/servlet/CustomerLoginOut</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/index.jsp</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/servlet/Index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookDetail</servlet-name>
+    <url-pattern>/servlet/BookDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShoppingCart</servlet-name>
+    <url-pattern>/servlet/ShoppingCart</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
