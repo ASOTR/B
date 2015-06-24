@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="zhzykWP"
+  id="myeclipse.1435115776797"
+  context-root="/zhzykWP"
+  j2ee-spec="6.0"
+  archive="zhzykWP.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
